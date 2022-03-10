@@ -1,0 +1,243 @@
+//variables
+$color-azul-bajo:#3656d4;
+$color-azul-fuerte:#1f3e72;
+$color-blanco:rgb(255, 255, 255);
+$sizeH1:70px;
+$sizeH3:50px;
+$sizeH4:30px;
+$sizep:25px; 
+$icobig:40px;   
+$icoS:15px; 
+
+
+nav{
+  
+   display: flex;
+   justify-content: end;
+   padding: 15%;
+   background-color: rgba(255, 255, 255, 0.753);
+   
+   
+
+   .navbar-brand {
+      text-align: center;
+      color:$color-azul-bajo;
+      font-weight: bold;
+      font-size: 40px;
+   }
+
+   .nav-link{
+         text-align: center;
+         color: $color-azul-fuerte;
+         font-size: 20px;
+         padding-left: 40px;
+         padding-right: 40px;
+         font-weight: bold;
+      }
+ }
+
+
+.right-sections{
+   display: flex;
+ }
+
+
+@mixin spang {
+   padding-left: 10px;
+   padding-right: 10px;   
+}
+
+@mixin shadow{
+   -webkit-box-shadow: 0px 8px 20px -1px rgba(0,0,0,0.96); 
+   box-shadow: 0px 8px 20px -1px rgba(0,0,0,0.96);
+   background-color: white;
+   border-radius: 10px;
+    
+}
+
+@mixin left{
+ padding-left:10%;
+}
+
+@mixin right{
+   padding-right:10%;
+}
+
+@mixin filtro {
+   filter: sepia(100%) hue-rotate(190deg) saturate(500%) grayscale(10%);
+   opacity: 0.2; 
+}
+
+//////////
+
+
+h1{
+   font-size: $sizeH1;
+   font-weight: bold;
+   color:$color-azul-fuerte;
+}
+
+
+h3{
+   font-size: $sizeH3;
+   color: $color-azul-fuerte;  
+   padding-bottom: 30px;
+}
+
+h4{
+   font-size: $sizeH4;
+   font-weight: bold;
+   color: $color-azul-fuerte;
+   
+}
+
+p{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: $sizep;
+   color:$color-azul-fuerte;
+}
+
+.btn-primary {
+   background-color: $color-azul-bajo;
+   color: white;
+   font-size: 1.25rem;
+
+}
+
+.btn-primaryw{
+   background-color:rgba(100, 148, 237, 0.383);
+   color: $color-azul-fuerte;
+   padding: auto;
+}
+
+
+.centro{
+   text-align: left;
+   width: 50%; 
+   padding-left: 12%;
+   padding-right: 12%;
+}
+
+.caja{
+   span{
+      font-size: 15px;
+      padding-left: 20px;
+      font-weight: bold;
+      color:$color-azul-fuerte
+   } 
+}
+
+.floatbox{
+   @include shadow();
+   position: relative;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   top:-100px;
+   span{
+      @include spang();
+     
+   }
+   text-align: center;
+   font-size: 20px;
+}
+
+
+.fa-solid{
+   color: $color-azul-bajo; 
+   font-size: $icoS;
+}
+
+.logos{
+   @include filtro();
+   padding-bottom: 30px;
+   padding-top: 20px; 
+}
+
+.vaccine{
+   p{
+      padding-bottom: 55px;
+   }
+
+   i{
+      font-size: $icobig;
+      text-align: left;
+      padding:20px;
+      background-color: #e9f1fd;
+      padding-top: 10px;
+      border-radius: 5px;
+      
+   }
+
+   padding-bottom: 14%;
+}
+
+.before{
+   padding-bottom: 10%;
+
+   i{
+      font-size: $icoS;
+      text-align: left;
+      padding:10px;
+      background-color: #e9f1fd;
+      padding-top: 10px;
+      border-radius: 5px;
+   }
+ 
+   span{
+      font-size: 20px;
+      padding-left: 20px;
+      font-weight: bold;
+      color:$color-azul-fuerte
+   } 
+
+   p{
+      @include right();
+   }
+   
+}
+
+.contact{
+   padding-bottom: 10%;
+
+
+}
+
+.bxx{
+   @include left();
+}
+
+.footer{
+   background-color:  #eef3ff;;
+}
+.pie{
+   font-size: medium;
+   font-weight: bolder;
+
+   p{
+      padding-top:4rem;
+   }
+
+}
+
+@media (max-width: 760px) { 
+
+  .caja{
+   padding-bottom: 10%;
+     .centro{
+      text-align: justify;
+      width: 100%; 
+     }
+ 
+  }
+
+.footer{
+   text-align: center;
+   background-color: #eef3ff;
+   p{
+      font-size: 10px;
+   }
+  
+}
+
+}

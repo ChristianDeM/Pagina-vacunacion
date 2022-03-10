@@ -1,0 +1,199 @@
+h1{
+    font-size: 60px;
+    text-align: left;
+    font-weight: bold;
+    color: #1f3e72;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    
+}
+
+h3{
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 2%;
+}
+
+h4{
+    color: #1f3e72;
+}
+.navbar-light .navbar-brand{
+    color:#3656d4;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+.nav-link{
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+
+
+
+
+
+p{
+    font-size: x-large;
+    color: #1f3e72;
+}
+
+
+.baner{
+    height: 70%;    
+}
+
+.banerT{
+    top:auto;
+    padding-left: 10%;
+    padding-right: 12%;   
+}
+
+.span{
+   font-size: large;
+   padding: 20px;
+}
+
+i{
+    font-size: medium;
+    color: #1f3e72;
+    text-align:center;
+    padding-bottom: 15px;
+    background-color:white;
+    
+}
+
+.vac{
+    position: relative;
+    top: -150px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    -webkit-box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+    box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+    border-radius: 10px;
+}
+
+.logos{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%)   grayscale(10%);
+    opacity: 0.2;
+
+}
+
+.btn{
+    background-color: #3656d4;
+   
+}
+
+.border{
+    -webkit-box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 26px -1px rgba(0,0,0,0.48);
+}
+
+.iii{
+    font-size: 30px;
+    padding-top: 8%;
+    padding-bottom: 15%;
+    color: #3656d4;
+}
+
+.vaccine{
+    padding-bottom: 10%;
+}
+
+.fondo{
+    background-color: aqua;
+}
+
+.before{
+   padding-top:5%; 
+   padding-bottom:5%; 
+}
+
+
+
+.btn-primary{
+    background-color:#3656d4;
+    color: white;
+}
+
+.btn-primaryM{
+    background-color:#1f3e72;
+    color: white;
+}
+
+.btn-primaryW{
+    background-color:#f1f5ff;
+    color: #3656d4;
+    font-weight: bold;
+}
+
+
+.ico{
+     padding-inline-start: 15px;
+     font-size: 25px;
+
+}
+
+.centrado{
+    
+    padding-left:7%;
+}
+
+
+.contact{
+    padding-top:5%; 
+    padding-bottom:5%; 
+   
+}
+
+.footer{
+    background-color: #eef3ff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.Pie{
+    color: #1f3e72;
+    font-size: 20px;
+    padding: 0;
+}
+
+
+
+
+@media (max-width: 760px) { 
+
+    .baner{
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .contact{
+        padding-bottom: 40px;
+    }
+
+    .pie{
+       font-size: small;
+       padding-bottom: 10px;
+       text-align: center;
+    }
+
+    .footer h4{
+        font-size:30;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .ppp{
+        height: auto;
+        text-align: center;
+    }
+
+ }
